@@ -48,7 +48,7 @@ function Contact() {
           <div className="col">
             <h4>Press &amp; Brand</h4>
             <a href="mailto:contact@soartech.in" className="big">
-              press@soartech.in
+              contact@soartech.in
               <span style={{ fontSize: 18, opacity: 0.7 }}>↗</span>
             </a>
             <p style={{ marginTop: 10 }}>
