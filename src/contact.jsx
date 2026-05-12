@@ -37,7 +37,10 @@ function Contact() {
           </div>
           <div className="col">
             <h4>Studio</h4>
-            <div className="big" style={{ fontWeight: 400, lineHeight: 1.3 }}>
+            <div
+              className="big"
+              style={{ display: "block", fontWeight: 400, lineHeight: 1.3 }}
+            >
               H. No. 126,
               <br />
               Hanuman Mandir Road,

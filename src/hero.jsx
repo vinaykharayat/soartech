@@ -9,6 +9,7 @@ function Hero() {
     return () => clearInterval(id);
   }, []);
 
+  // build measure word for sizing the rotor (longest word)
   const longest = words.reduce((a, b) => (a.length >= b.length ? a : b), "");
 
   return (
@@ -47,9 +48,10 @@ function Hero() {
         </h1>
 
         <p className="hero-sub">
-          We build transformative consumer products from the foothills of Uttarakhand.
-          Soft-launched in 2025 with one product live and more in the works —
-          quietly shipping things that simplify everyday life.
+          We build transformative consumer products and open developer
+          tools from the foothills of Uttarakhand — and ship the occasional
+          piece of client work for teams whose mission we believe in.
+          Two own products live, with more quietly in the works.
         </p>
 
         <div className="hero-actions">
@@ -62,8 +64,8 @@ function Hero() {
 
         <div className="hero-meta">
           <div className="cell">
-            <div className="k">Live products</div>
-            <div className="v">01 / ShopSwiftly</div>
+            <div className="k">Own products</div>
+            <div className="v">02 · ShopSwiftly + MultiChainSign</div>
           </div>
           <div className="cell">
             <div className="k">Founded</div>
@@ -71,7 +73,7 @@ function Hero() {
           </div>
           <div className="cell">
             <div className="k">Focus</div>
-            <div className="v">Quick commerce, fintech, daily life</div>
+            <div className="v">Consumer, dev infra, select client work</div>
           </div>
           <div className="cell">
             <div className="k">Status</div>

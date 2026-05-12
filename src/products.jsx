@@ -1,6 +1,7 @@
 // Products / ShopSwiftly — animated phone with live price comparison
 
 function Products() {
+  // The catalog — items the search field cycles through
   const catalog = [
     {
       query: "Onions 1kg",
@@ -42,6 +43,7 @@ function Products() {
     return () => clearInterval(id);
   }, []);
 
+  // figure out best (lowest) price
   const merchants = [
     { key: "instamart", name: "Instamart", initial: "I", color: "#fc8019" },
     { key: "blinkit",   name: "Blinkit",   initial: "B", color: "#f8cd1c" },
@@ -62,25 +64,27 @@ function Products() {
           <div>
             <div className="eyebrow" style={{ marginBottom: 18 }}>
               <span style={{ display: "inline-block", width: 28, height: 1, background: "var(--accent)", marginRight: 12, verticalAlign: "middle" }}></span>
-              The work · 01 of 01 live
+              Flagship product
             </div>
             <h2>
               One product, <em>shipped.</em><br/>
               Many more <em>on the workbench.</em>
             </h2>
           </div>
-          <div className="meta">
-            ShopSwiftly<br/>
-            v0.9 · Beta<br/>
-            India only
-          </div>
+            <div className="meta">
+              ShopSwiftly<br/>
+              v0.9 · Beta<br/>
+              India only
+            </div>
         </div>
 
         <div className="shop-showcase">
+          {/* phone mockup */}
           <div className="phone-wrap">
             <Phone item={item} merchants={merchants} bestKey={best.k} savePct={savePct} />
           </div>
 
+          {/* product description */}
           <div className="shop-side">
             <div className="shop-tag">
               <span className="badge">● Available now</span>
@@ -152,6 +156,7 @@ function Products() {
 }
 
 function Phone({ item, merchants, bestKey, savePct }) {
+  // typewriter effect on the search query
   const [typed, setTyped] = React.useState("");
   React.useEffect(() => {
     setTyped("");

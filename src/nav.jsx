@@ -29,6 +29,7 @@ function SoarMark({ className, size = 22 }) {
           <stop offset="1" stopColor="var(--accent, #5b8cff)" />
         </linearGradient>
       </defs>
+      {/* arrow / soaring chevron */}
       <path
         d="M12 2 L22 14 L17 14 L12 8 L7 14 L2 14 Z"
         fill="url(#sm-grad)"

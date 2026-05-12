@@ -28,18 +28,21 @@ const FONT_OPTIONS = [
 function App() {
   const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
 
+  // Apply theme tokens on body
   React.useEffect(() => {
     const r = document.documentElement.style;
     const accent = Array.isArray(t.accent) ? t.accent[0] : t.accent;
     const accentSoft = Array.isArray(t.accent) ? t.accent[1] : t.accentSoft;
     r.setProperty("--accent", accent);
     r.setProperty("--accent-soft", accentSoft);
+    // accent-glow as rgba derived from hex
     r.setProperty("--accent-glow", hexToRgba(accent, 0.45));
     r.setProperty("--f-sans", `"${t.displayFont}", "Inter", ui-sans-serif, system-ui, sans-serif`);
     r.setProperty("--f-serif", `"${t.italicFont}", "Times New Roman", serif`);
     document.body.classList.toggle("light", !t.dark);
   }, [t]);
 
+  // current accent value (always store as palette pair for the swatch to render)
   const currentAccent = Array.isArray(t.accent) ? t.accent : [t.accent, t.accentSoft];
 
   return (
@@ -49,6 +52,7 @@ function App() {
       <Marquee />
       <About />
       <Products />
+      <MoreWork />
       <Founder />
       <Contact />
       <Footer />

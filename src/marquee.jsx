@@ -4,7 +4,12 @@ function Marquee() {
   const items = [
     "Product studio",
     "Quick commerce",
+    "Sacred journeys",
+    "Multi-chain signing",
+    "Open source",
     "Price transparency",
+    "Adi Kailash · Om Parvat",
+    "OpenBao plugin",
     "Made in India",
     "Building in public",
     "Crafted from the himalayas",

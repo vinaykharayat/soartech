@@ -27,7 +27,7 @@ function Founder() {
           <div className="founder-side">
             <h3>The person behind it</h3>
             <p className="founder-quote">
-              <span className="open-q">"</span>I started Soartech because I kept
+              <span className="open-q">“</span>I started Soartech because I kept
               finding myself opening four grocery apps before checkout — and
               getting the price wrong anyway.
               <em>
@@ -35,7 +35,7 @@ function Founder() {
                 The best technology fixes things you didn't even realise were
                 broken.
               </em>
-              <span className="close-q">"</span>
+              <span className="close-q">”</span>
             </p>
             <p className="founder-bio">
               Vinay is a technology entrepreneur with a long-running interest in
